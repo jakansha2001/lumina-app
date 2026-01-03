@@ -16,7 +16,14 @@ class LuminaApp extends StatelessWidget {
         brightness: Brightness.light,
         useMaterial3: true,
       ),
-      home: const Placeholder(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Welcome to Lumina'),
+        ),
+        body: const Center(
+          child: Text('Hello, Lumina!'),
+        ),
+      ),
     );
   }
 }
