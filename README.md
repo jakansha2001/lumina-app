@@ -1,6 +1,6 @@
-# lumina_app
+# Lumina
 
-A new Flutter project.
+A calm, voice-first AI mental wellness companion.
 
 ## Getting Started
 
