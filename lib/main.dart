@@ -21,7 +21,7 @@ class LuminaApp extends StatelessWidget {
           title: const Text('Welcome to Lumina'),
         ),
         body: const Center(
-          child: Text('Hello, Lumina!'),
+          child: Text('A calm, voice-first AI mental wellness companion.'),
         ),
       ),
     );
