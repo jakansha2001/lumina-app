@@ -31,7 +31,7 @@ class LuminaApp extends StatelessWidget {
               onPressed: () {
                 // Placeholder for button action
               },
-              child: const Text('Get Started'),
+              child: const Text('Ask Lumina'),
             ),
           ],
         ),
