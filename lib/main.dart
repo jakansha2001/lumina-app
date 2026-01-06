@@ -20,8 +20,20 @@ class LuminaApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Welcome to Lumina'),
         ),
-        body: const Center(
-          child: Text('A calm, voice-first AI mental wellness companion.'),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Center(
+              child: Text('A calm, voice-first AI mental wellness companion.'),
+            ),
+            const SizedBox(height: 20),
+            OutlinedButton(
+              onPressed: () {
+                // Placeholder for button action
+              },
+              child: const Text('Get Started'),
+            ),
+          ],
         ),
       ),
     );
