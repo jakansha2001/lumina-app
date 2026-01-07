@@ -21,6 +21,7 @@ class LuminaApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Welcome to Lumina'),
           backgroundColor: Colors.pinkAccent,
+          foregroundColor: Colors.white,
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
