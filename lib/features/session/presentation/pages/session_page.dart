@@ -25,7 +25,7 @@ class SessionPage extends StatelessWidget {
               ),
               SizedBox(height: 24),
               Text(
-                'Welcome to your safe space!',
+                'Welcome to your safe space',
                 style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
