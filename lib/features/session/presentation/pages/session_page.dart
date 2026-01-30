@@ -8,7 +8,7 @@ class SessionPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFF5F0FF),
       appBar: AppBar(
-        title: const Text('Chat with Lumina, your AI Wellness Companion!'),
+        title: const Text('Chat with Lumina, your AI Wellness Companion.'),
         backgroundColor: Colors.deepPurple,
         foregroundColor: Colors.white,
       ),
