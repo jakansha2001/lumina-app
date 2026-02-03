@@ -11,7 +11,7 @@ class LuminaApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Lumina',
+      title: 'Lumina AI',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,
