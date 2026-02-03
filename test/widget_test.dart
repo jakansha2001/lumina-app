@@ -8,23 +8,52 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:lumina_app/core/router/app_router.dart';
+import 'package:lumina_app/features/session/presentation/pages/session_page.dart';
 import 'package:lumina_app/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  testWidgets('Home page displays correctly', (WidgetTester tester) async {
+    // Build the app and trigger a frame.
+    await tester.pumpWidget(const LuminaApp());
+    await tester.pumpAndSettle();
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // Verify the app title is displayed.
+    expect(find.text('Welcome to Lumina'), findsOneWidget);
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+    // Verify the tagline is displayed.
+    expect(find.text('A calm, voice-first AI mental wellness companion.'),
+        findsOneWidget);
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Verify the Ask Lumina button exists.
+    expect(find.text('Ask Lumina'), findsOneWidget);
+  });
+
+  testWidgets('HomePage widget renders correctly', (WidgetTester tester) async {
+    // Test HomePage in isolation.
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: HomePage(),
+      ),
+    );
+
+    expect(find.text('Welcome to Lumina'), findsOneWidget);
+    expect(find.text('Ask Lumina'), findsOneWidget);
+    expect(find.byType(OutlinedButton), findsOneWidget);
+  });
+
+  testWidgets('SessionPage widget renders correctly',
+      (WidgetTester tester) async {
+    // Test SessionPage in isolation.
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: SessionPage(),
+      ),
+    );
+
+    expect(find.text('Chat with Lumina, your AI Wellness Companion!'),
+        findsOneWidget);
+    expect(find.text('Welcome to your safe space!'), findsOneWidget);
+    expect(find.byIcon(Icons.psychology_outlined), findsOneWidget);
   });
 }
