@@ -5,6 +5,7 @@
 /// - Easy deep linking
 /// - Better debugging with meaningful names
 abstract class RouteNames {
+  static const String splash = 'splash';
   static const String home = 'home';
   static const String session = 'session';
   static const String onboarding = 'onboarding';

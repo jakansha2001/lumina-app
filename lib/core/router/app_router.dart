@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:lumina_app/core/constants/route_constants.dart';
+import 'package:lumina_app/features/session/presentation/pages/session_page.dart';
+import 'package:lumina_app/features/splash/presentation/pages/splash_page.dart';
 
-import '../../features/session/presentation/pages/session_page.dart';
-import '../constants/route_constants.dart';
+
+
+
 import 'routes.dart';
 
 /// Application router configuration using go_router.
@@ -19,9 +23,14 @@ class AppRouter {
 
   static final GoRouter router = GoRouter(
     navigatorKey: _rootNavigatorKey,
-    initialLocation: Routes.home,
+    initialLocation: Routes.splash,
     debugLogDiagnostics: true,
     routes: [
+      GoRoute(
+        path: Routes.splash,
+        name: RouteNames.splash,
+        builder: (context, state) => const SplashPage(),
+      ),
       GoRoute(
         path: Routes.home,
         name: RouteNames.home,

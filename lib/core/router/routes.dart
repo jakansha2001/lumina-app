@@ -5,6 +5,7 @@
 /// - Easy refactoring
 /// - Compile-time safety
 abstract class Routes {
+  static const String splash = '/splash';
   static const String home = '/';
   static const String session = '/session';
   static const String onboarding = '/onboarding';
