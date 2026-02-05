@@ -8,8 +8,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:lumina_app/core/router/app_router.dart';
-import 'package:lumina_app/features/session/presentation/pages/session_page.dart';
+import 'package:lumina_app/core/router/router.dart';
+import 'package:lumina_app/features/session/presentation/pages/pages.dart';
 import 'package:lumina_app/main.dart';
 
 void main() {

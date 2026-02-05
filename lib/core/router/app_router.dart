@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:lumina_app/core/constants/route_constants.dart';
-import 'package:lumina_app/features/session/presentation/pages/session_page.dart';
-import 'package:lumina_app/features/splash/presentation/pages/splash_page.dart';
-
-
-
-
-import 'routes.dart';
+import 'package:lumina_app/core/constants/constants.dart';
+import 'package:lumina_app/features/session/presentation/pages/pages.dart';
+import 'package:lumina_app/features/splash/presentation/pages/pages.dart';
+import 'package:lumina_app/core/router/router.dart';
 
 /// Application router configuration using go_router.
 ///

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lumina_app/core/router/app_router.dart';
+import 'package:lumina_app/core/router/router.dart';
 
 void main() {
   runApp(const LuminaApp());
